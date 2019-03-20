@@ -1,0 +1,80 @@
+body{
+  background: linear-gradient( rgba(255, 231, 170, 0.45), rgba(255, 231, 170, 0.45)), url(Imagenes/background1.jpg);
+}
+
+.encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  /* justify-content: space-between; */
+}
+
+.botones{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.vinculos{
+  display: inline-block;
+  text-decoration: none;
+  color: grey;
+  background: rgb(168, 199, 100);
+  border-radius: 30px;
+  border: 3px grey solid;
+  padding: 20px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 600;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.vinculos:hover{
+  transform: scale(1.1);
+}
+
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 150px;
+   text-shadow: 2px 2px 2px grey
+}
+.img_cont{
+  overflow: hidden;
+  width: 30%;
+  position: relative;
+  padding-top: 30%;
+  background-image: url(Imagenes/pepi_ppalrec.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.textoparrafo{
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 30px;
+}
+
+.parrafos{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#left{
+  align-self: flex-start;
+  width: 45%;
+  margin-bottom: 30px;
+  
+}
+
+#right{
+  align-self: flex-end;
+  width: 45%;
+  margin-bottom: 30px;
+}
+
+
+/* img {
+  border-radius: 50%; 
+} */
