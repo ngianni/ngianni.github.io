@@ -2,12 +2,32 @@ body{
   background: linear-gradient( rgba(255, 231, 170, 0.45), rgba(255, 231, 170, 0.45)), url(Imagenes/background1.jpg);
 }
 
+
 .encabezado {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
-  /* justify-content: space-between; */
+}
+
+.encabezado_chat {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#chatconpepi{
+  text-decoration: none;
+  color: pink;
+  background: gray;
+  border-radius: 15px;
+  border: 1px grey solid;
+  padding: 5px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 400;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .botones{
@@ -38,12 +58,14 @@ body{
 h1 {
   font-family: 'Amatic SC', cursive;
   font-size: 150px;
-   text-shadow: 2px 2px 2px grey
+  text-shadow: 2px 2px 2px grey;
+  
 }
 .img_cont{
   overflow: hidden;
   width: 30%;
   position: relative;
+  right: 20px;
   padding-top: 30%;
   background-image: url(Imagenes/pepi_ppalrec.jpg);
   background-size: cover;
@@ -74,7 +96,67 @@ h1 {
   margin-bottom: 30px;
 }
 
+.hidden{
+  display: none;
+}
 
-/* img {
-  border-radius: 50%; 
-} */
+.hidden2{
+  visibility: hidden;
+}
+
+.chatreveal{
+  display: block;
+  width: 50%;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  z-index: 2;
+}
+
+#listabox{
+  background-color: grey;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 30px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 25px;
+  margin: 0 auto;
+  width: auto;
+  
+}
+
+#userinput{
+  background-color: pink;
+  height: 10%;
+  width: 100%;
+  border-radius: 10px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 25px;
+  margin: 0 auto;
+}
+
+#lista{
+  list-style: none;
+}
+
+.respuestapepi{
+  font-size: 20px;
+  color: pink;
+  font-family: 'Catamaran', sans-serif;
+  padding-bottom: 6px;
+}
+
+.respuestausuario{
+  font-size: 20px;
+  color: goldenrod;
+  font-family: 'Catamaran', sans-serif;
+  padding-bottom: 6px;
+
+}
+
+.respuestaauto{
+  font-size: 17px;
+  color: whitesmoke;
+  font-family: 'Catamaran', sans-serif;
+  padding-bottom: 4px;
+}
