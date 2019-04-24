@@ -5,19 +5,21 @@
     <title>PEPI</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Nanum+Pen+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+
   </head>
   <body>
+
+    <button id="chatconpepi" value="mierda">Chat gatuno</button>
+    
     <div class="encabezado">
       <h1>SOY PEPI</h1>
-      <!-- <div class=img_cont">
-          <img src="Imagenes\pepi_ppalrec.jpg" alt="pepi_ppal" height="500px" width="500px" >
-      </div> -->
-      <div class="img_cont">
-      </div>
-
+      <div class="img_cont"></div>
     </div>
 
-  <div class="parrafos">
+    
+
+  <div id= "parrafos" class="parrafos">
     <div id="left">
       <p class="textoparrafo">Hola! Soy el pepi. Mucho gusto. Fui rescatado a mis seis meses por un hogar y un tiempito después me llevó una familia adorable a su casita</p>
     </div>
@@ -35,12 +37,27 @@
     </div>
 
   </div>
-<div class="botones">
+<div id="botones" class="botones">
   <a class="vinculos" href="midia.html">Mi día</a>
   <a class="vinculos" href="mishobbies.html">Mis hobbies</a>
   <a class="vinculos" href="mishobbies.html">Mi familia</a>
 </div>
 
+<div id="chat" class="hidden">
+ 
+  <div id="listabox">
+    <ul id="lista" >
+      <li class="respuestapepi">miaaaauuu! hablemos un ratito!</li>
+      <li class="respuestapepi">cómo te llamas?</li>
+    </ul>
+  </div>
+  <br>
+  <input id="userinput" type="text" placeholder="escribe tu respuesta">
+
+</div>
+
+<script type="text/javascript" src="codigo.js">
+</script>
 
 
   </body>
